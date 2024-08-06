@@ -39,13 +39,15 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('email')
                     ->unique(ignoreRecord: true)
                     ->required(),
-
+                Forms\Components\TextInput::make('password')
+                    ->password()
             ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
+        
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()
