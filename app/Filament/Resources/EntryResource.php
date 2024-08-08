@@ -463,7 +463,7 @@ class EntryResource extends Resource
             ->striped()
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                ->label('')
+                    ->label('')
                     ->weight(FontWeight::Bold),
 
 
@@ -642,8 +642,7 @@ class EntryResource extends Resource
                     ->searchable()
                     ->copyable()
                     ->copyMessage('Mobile phone copied')
-                    ->icon('heroicon-m-square-2-stack')
-                    ->copyMessage('Mobile Phone copied'),
+                    ->icon('heroicon-m-square-2-stack'),
 
                 Tables\Columns\TextColumn::make('r_current')
                     ->label('Current Address')
