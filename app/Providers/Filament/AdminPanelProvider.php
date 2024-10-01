@@ -40,7 +40,7 @@ class AdminPanelProvider extends PanelProvider
                 fn () => view('customFooter'),
             )
             ->colors([
-                'primary' => Color::Purple,
+                'primary' => Color::Green,
             ])
             ->plugins([
                 EnvironmentIndicatorPlugin::make()
