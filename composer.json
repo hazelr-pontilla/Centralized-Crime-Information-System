@@ -10,7 +10,7 @@
     "require": {
         "php": "^8.1",
         "arbermustafa/filament-google-charts-widgets": "^2.0",
-        "filament/filament": "3.0-stable",
+        "filament/filament": "^3.2",
         "flowframe/laravel-trend": "^0.1.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",

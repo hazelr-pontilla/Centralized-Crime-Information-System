@@ -33,7 +33,7 @@ class AdminPanelProvider extends PanelProvider
             ->login()
             ->profile()
             ->passwordReset()
-            ->emailVerification()
+            // ->emailVerification()
             ->registration()
             ->renderHook(
                 'panels::body.end',
