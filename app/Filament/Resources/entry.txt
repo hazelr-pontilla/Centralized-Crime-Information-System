@@ -1,0 +1,12 @@
+//                Forms\Components\Section::make('CASE STATUS')
+//                    ->iconColor('warning')
+//                    ->icon('heroicon-m-scale')
+//                    ->schema([
+//                        Forms\Components\Grid::make(1)
+//                            ->schema([
+//                                Forms\Components\Radio::make('case')
+//                                    ->label(' ')
+//                                    ->inline()
+//                                    ->options(self::$cases),
+//                            ])
+//                    ])->columnSpan(1),
