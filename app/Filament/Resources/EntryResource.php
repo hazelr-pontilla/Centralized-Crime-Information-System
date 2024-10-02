@@ -84,19 +84,6 @@ class EntryResource extends Resource
                             ]),
                     ]),
 
-//                Forms\Components\Section::make('CASE STATUS')
-//                    ->iconColor('warning')
-//                    ->icon('heroicon-m-scale')
-//                    ->schema([
-//                        Forms\Components\Grid::make(1)
-//                            ->schema([
-//                                Forms\Components\Radio::make('case')
-//                                    ->label(' ')
-//                                    ->inline()
-//                                    ->options(self::$cases),
-//                            ])
-//                    ])->columnSpan(1),
-
                 Forms\Components\Section::make()
                     ->schema([
                         Forms\Components\TextInput::make('entryID')
@@ -169,13 +156,6 @@ class EntryResource extends Resource
                         Forms\Components\Section::make('SCREENSHOTS')
                             ->schema([
 
-//                                Forms\Components\Toggle::make('post')
-//                                    ->label('Post')
-//                                    ->onIcon('heroicon-s-check')
-//                                    ->offIcon('heroicon-m-x-mark')
-//                                    ->onColor('success')
-//                                    ->offColor('danger'),
-
                                 Forms\Components\Toggle::make('transactions')
                                     ->label('Transactions')
                                     ->onIcon('heroicon-s-check')
@@ -203,7 +183,7 @@ class EntryResource extends Resource
                     ->icon('heroicon-m-folder-minus')
                     ->iconColor('success')
                     ->schema([
-
+ 
                         Forms\Components\Grid::make(1)
                             ->schema([
 
