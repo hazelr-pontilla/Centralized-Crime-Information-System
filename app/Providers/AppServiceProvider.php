@@ -8,6 +8,7 @@ use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\ServiceProvider;
+use URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,7 +17,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        if (env(key: 'APP_ENV') !=='local') {
+            URL::forceScheme(scheme:'https');
+          }
     }
 
     /**
@@ -24,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // $this->app['url']->forceRootUrl(env('NGROK_URL'));
+
         // TextInput::configureUsing(function (TextInput $textInput) {
         //     $textInput->inlineLabel();
         // });
